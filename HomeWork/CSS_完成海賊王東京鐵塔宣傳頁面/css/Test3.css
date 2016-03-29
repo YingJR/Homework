@@ -1,0 +1,69 @@
+ body {
+     margin: 0px;
+     /*body和內容div間的空白*/
+     font-size: 0.85rem;
+     /*em為目前body預設字體16px的倍數*/
+     /*1 ÷ 父元素的font-size × 需要转换的像素值 = em值*/
+     /*rem=root em html的font size*/
+     font-weight: bold;
+     font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+ }
+ 
+ #leftFrm {
+     width: 50%;
+     height: 100%;
+     background-color: #5CB6E7;
+     background-image: url("../img/foreign_parts_left.png");
+     background-repeat: no-repeat;
+     background-position: 50px;
+     position: fixed;
+ }
+ 
+ #rightFrm {
+     position: absolute;
+     left: 50%;
+     text-align: center;
+ }
+ 
+ #content {
+     padding: 50px 70px;
+     background-image: url("../img/bg_dot.jpg");
+ }
+ 
+ img {
+     margin: 30px 0px;
+ }
+ 
+ .table {
+     text-align: left;
+ }
+ 
+ #banner:hover {
+     opacity: 0.7;
+ }
+ 
+ .smallFont {
+     font-size: 0.5em;
+ }
+ 
+ table,
+ th,
+ td {
+ 	text-align: center;
+     border: 1px solid Gray;
+     border-collapse: collapse;
+     padding: 15px;
+     margin: auto;
+ }
+ table{
+ 	width: 100%;
+ }
+ 
+ th {
+     background-color: #5CB6E7;
+ }
+ 
+ #endBar {
+     text-align: left;
+     padding-left: 30px;
+ }

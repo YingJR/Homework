@@ -1,0 +1,5 @@
+1. 開啟網頁：http://www.toei-anim.co.jp/tv/onep/character/mugiwara/index.html
+
+2. 網頁所需圖片位於：1_HTML5/img/op資料夾中
+
+3. 請完成人物表格

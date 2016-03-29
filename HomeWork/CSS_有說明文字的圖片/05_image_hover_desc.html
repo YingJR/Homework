@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box Model</title>
+    <style type="text/css">
+
+    #content1 {
+        width: 477px;
+        
+        /*4. 這裡要先變成?底下的元素才能依附上來*/
+        position: relative;
+    }
+    
+    #img {
+        width: 100%;
+    }
+    
+    /*換成#img:hover + .desc是不是一樣的效果?*/
+    #content1:hover .desc{
+        /*3. 試試看用display或者用visibility*/
+        visibility: visible;
+    }
+    
+    .desc {
+        border: 8px solid #FF9966;
+
+        /*2. 試試看用display或者用visibility*/
+        visibility: hidden;
+
+        /*1. 要怎麼樣跳脫現有的元素流找到定位?*/
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div id="content1" style="margin:100px;">
+        <img id="img" src="sunny.jpg" >
+        <p class="desc">千陽號海上行</p>
+    </div>
+
+</body>
+
+</html>

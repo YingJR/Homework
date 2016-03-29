@@ -1,0 +1,59 @@
+1. 說明步驟網頁，請參考index.html裡面的註解
+
+2. 如果真的真的真的卡住了，請參考底下範例
+
+
+
+
+
+=========== 防雷頁 ===========
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tokyo Onepiece TOwer</title>
+    <link rel="stylesheet" type="text/css" href="css/onepiece.css">
+</head>
+
+<body>
+    <!-- 1. 分成左邊的袋子和右邊的袋子 -->
+    <div id="left"></div>
+    <div id="right"></div>
+
+
+    <!-- 2. 把左邊的袋子放入foreign_parts_left.png；右邊的袋子，放入10張logo_01.png-->
+    <!-- (放入10張logo_01.png是為了撐大袋子，看一下畫面比例) -->
+    <div id="left" style="position:fixed; ">
+        <img src="img/foreign_parts_left.png">
+    </div>
+    
+    <div id="right" style="width:50%; margin-left:50%;">
+        <img src="img/logo_01.png">
+        <img src="img/logo_01.png">
+        <img src="img/logo_01.png">
+        <img src="img/logo_01.png">
+        <img src="img/logo_01.png">
+        <img src="img/logo_01.png">
+        <img src="img/logo_01.png">
+        <img src="img/logo_01.png">
+        <img src="img/logo_01.png">
+        <img src="img/logo_01.png">
+    </div>
+
+    <!-- 3. 如何固定住左邊的區塊? -->
+
+    <!-- 4. 如何調整元素位置? (position) -->
+
+    <!-- 5. 調整完佈局，接下來應該就OK了。 -->
+    <div></div>
+</body>
+
+</html>
+

@@ -1,0 +1,96 @@
+body {
+    background-image: url(../img/bg-gray.jpg);
+}
+
+table {
+    width: 1080px;
+    margin: auto;
+    /*background-image: url(../img/29_bg.jpg);
+    background-attachment: fixed;
+    background-position: center;*/
+}
+
+th,
+td {
+    /*width: 786px;*/
+    /*border: solid 2px brown;*/
+    font-family: Microsoft JhengHei;
+    vertical-align: top;
+    /*文字像表格上方對齊*/
+    border-collapse: collapse;
+    /*合併表格邊框*/
+}
+
+header {
+    font-size: 50px;
+    color: #663d00;
+}
+
+nav {
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: DFKai-sb;
+}
+
+ol {
+    font-size: 20px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bolder;
+    height: 20px;
+    padding: 10px;
+    /*內部元素到邊框的距離*/
+}
+
+.detail {
+    font-size: 20px;
+}
+
+nav>a:link {
+    text-decoration: none;
+    color: Brown;
+}
+
+nav>a:visited {
+    font-weight: 100;
+    color: GoldenRod;
+}
+
+nav>a:hover {
+    font-size: 25px;
+    font-weight: bold;
+    color: #e6e600;
+}
+
+nav>a:active {
+    color: Gold;
+}
+
+#gameview {
+    width: 600px;
+}
+
+#moba {
+    padding: 10px;
+    width: 400px;
+    /*object-fit: cover;*/
+}
+
+#howtostart {
+    width: 800px;
+}
+
+#winimg {
+    width: 500px;
+    padding-left: 260px;
+}
+
+figcaption {
+    color: #52527a;
+    font-size: 25px;
+    font-family: Microsoft JhengHei;
+    text-align: center;
+}
