@@ -1,72 +1,11 @@
-body {
-    font-size: 1.5rem;
-    font-weight: bolder;
-    font-family: "微軟正黑體";
-}
+table,th,td{
+	border:2px solid Black;
 
-div {
-    margin: auto;
-    padding: 20px;
-    width: 250px;
-    height: 380px;
-    border: 2px solid Black;
-    border-radius: 5px;
-    background-color: #51B1FC;
 }
-
-#result {
-    width: 220px;
-    text-align: right;
+table{
+	width: 400px;
+	height: 550px;
 }
-
-#clear {
-    width: 215px;
-}
-
-#equal {
-    height: 50px;
-}
-
-span {
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid Black;
-    border-radius: 5px;
-    background: linear-gradient(#EAF7FB, #B6DDF6, #EAF7FB);
-    box-shadow: 2px 2px #001128;
-    padding: 10px;
-    margin: 5px;
-    float: left;
-}
-
-span:hover {
-    color: #4872F5;
-    background: linear-gradient(#77C7FB, #EAF7FB, #77C7FB);
-    /*opacity: 0.4;*/
-}
-
-#result:hover {
-    opacity: 1;
-    background: linear-gradient(#EAF7FB, #B6DDF6, #EAF7FB);
-    color: black;
-}
-
-span:active{
-	color: white;
-	background: #435268;
-}
-table,
-th,
-td {
-    border: 2px solid Black;
-}
-
-table {
-    width: 400px;
-    height: 550px;
-}
-
-td {
-    text-align: center;
+td{
+	text-align: center;
 }
