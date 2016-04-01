@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
     font-family: "微軟正黑體", "標楷體";
     font-weight: bolder;
     font-size: 20px;
@@ -39,10 +40,26 @@ span:active{
 	background-color:#5A5858; 
 	box-shadow:none;
 
+=======
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: "微軟正黑體";
+}
+
+div {
+    margin: auto;
+    padding: 20px;
+    width: 250px;
+    height: 380px;
+    border: 2px solid Black;
+    border-radius: 5px;
+    background-color: #51B1FC;
+>>>>>>> c3b264abc24de4a9d9fe433975420512a86250fe
 }
 
 #result {
     width: 220px;
+<<<<<<< HEAD
     background-color: #D4D4D4;
     border: 0px;
     text-align: right;
@@ -57,12 +74,67 @@ span:active{
 
 /*table,th,td{
 	border:2px solid Black;
+=======
+    text-align: right;
+}
+>>>>>>> c3b264abc24de4a9d9fe433975420512a86250fe
 
+#clear {
+    width: 215px;
 }
-table{
-	width: 400px;
-	height: 550px;
+
+#equal {
+    height: 50px;
 }
+
+span {
+    cursor: pointer;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid Black;
+    border-radius: 5px;
+    background: linear-gradient(#EAF7FB, #8ED3FF, #EAF7FB);
+    box-shadow: 2px 2px #001128;
+    padding: 10px;
+    margin: 5px;
+    float: left;
+}
+
+span:hover {
+    color: white;
+    background: radial-gradient(#EAF7FB, #0099FD);
+    /*opacity: 0.4;*/
+}
+
+#result:hover {
+    opacity: 1;
+    background: linear-gradient(#EAF7FB, #B6DDF6, #EAF7FB);
+    color: black;
+}
+
+span:active{
+	color: white;
+	background: #435268;
+    box-shadow: 1px 1px white;
+}
+table,
+th,
+td {
+    border: 2px solid Black;
+}
+
+table {
+    width: 400px;
+    height: 550px;
+}
+
+td {
+    text-align: center;
+}
+<<<<<<< HEAD
 td{
 	text-align: center;
 }*/
+=======
+>>>>>>> c3b264abc24de4a9d9fe433975420512a86250fe
