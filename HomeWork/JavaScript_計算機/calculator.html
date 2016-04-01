@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-    <html>
+<html>
 
-    <head>
-        <title>計算機</title>
-        <link rel="stylesheet" type="text/css" href="css/calculator.css">
-    </head>
+<head>
+    <title>計算機</title>
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+</head>
 
-    <body>
-        <table>
+<body>
+    <div id="calTable">
+        <div class="Top">
+            <span id="result">0.</span>
+        </div>
+        <div class="Num">
+            <span onclick="test(7)">7</span>
+            <span onclick="test(8)">8</span>
+            <span onclick="test(9)">9</span>
+            <span class="sign">/</span>
+            <span onclick="test(4)">4</span>
+            <span onclick="inNum(5)">5</span>
+            <span onclick="inNum(6)">6</span>
+            <span class="sign">x</span>
+            <span onclick="inNum(1)">1</span>
+            <span onclick="inNum(2)">2</span>
+            <span onclick="inNum(3)">3</span>
+            <span class="sign">-</span>
+            <span onclick="inNum(0)">0</span>
+            <span>.</span>
+            <span onclick="anser()">=</span>
+            <span class="sign" onclick="test('+')">+</span>
+        </div>
+    </div>
+    <!--         <table>
             <tr>
-            	<th>O</th>
+                <th>O</th>
                 <th colspan="4">計算機</th>
             </tr>
             <tr>
@@ -40,8 +63,45 @@
             
             </tr>
         </table>
-        <script type="text/javascript">
-        </script>
-    </body>
+        <script type="text/javascript" src="js/calculator.js" ></script> -->
+    <script type="text/javascript">
+    var ok=false;
+    var inpu = 0.0;
+    var a = 0;
+    var b = 0;
+    var c = 0;
 
-    </html>
+    function inNum(x) {
+        if (document.getElementById("result").innerHTML == "0.") {
+            inpu = x;
+        } else {
+            inpu = document.getElementById("result").innerHTML + x;
+        }
+
+        document.getElementById("result").innerHTML = inpu;
+    }
+
+
+    function addNum() {
+        a = parseInt(document.getElementById("result").innerHTML);
+        document.getElementById("result").innerHTML = a + "+";
+    }
+
+    function anser() {
+        var str = document.getElementById("result").innerHTML;
+        b = parseInt(document.getElementById("result").innerHTML);
+        document.getElementById("result").innerHTML = x;
+    }
+
+    function test(inx) {
+
+        if (inx == "+") {
+            var str = document.getElementById("result").innerHTML;
+            ok=true;
+            alert(ok);
+        }
+        // alert(typeof(in));
+    }
+    </script>
+
+</html>
