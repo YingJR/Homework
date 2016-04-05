@@ -7,68 +7,39 @@
 </head>
 
 <body>
-        <div id="calTable">
-            <div class="Top">
-                <span id="result">0.</span>
-            </div>
-            <div class="Num">
-                <span onclick="test(7)">7</span>
-                <span onclick="test(8)">8</span>
-                <span onclick="test(9)">9</span>
-                <span class="sign">/</span>
-                <span onclick="test(4)">4</span>
-                <span onclick="inNum(5)">5</span>
-                <span onclick="inNum(6)">6</span>
-                <span class="sign">x</span>
-                <span onclick="inNum(1)">1</span>
-                <span onclick="inNum(2)">2</span>
-                <span onclick="inNum(3)">3</span>
-                <span class="sign">-</span>
-                <span onclick="inNum(0)">0</span>
-                <span>.</span>
-                <span onclick="anser()">=</span>
-                <span class="sign" onclick="test('+')">+</span>
-            </div>
+    <div id="calTable">
+        <div class="Top">
+            <span id="result"></span>
         </div>
-    <!--<script type="text/javascript" src="js/calculator.js" ></script> -->
+        <div class="Num">
+            <span onclick="pad(7)">7</span>
+            <span onclick="pad(8)">8</span>
+            <span onclick="pad(9)">9</span>
+            <span class="sign" onclick="pad('/')">/</span>
+            <span onclick="pad(4)">4</span>
+            <span onclick="pad(5)">5</span>
+            <span onclick="pad(6)">6</span>
+            <span class="sign" onclick="pad('*')">x</span>
+            <span onclick="pad(1)">1</span>
+            <span onclick="pad(2)">2</span>
+            <span onclick="pad(3)">3</span>
+            <span class="sign" onclick="pad('-')">-</span>
+            <span onclick="pad(0)">0</span>
+            <span onclick="pad('.')">.</span>
+            <span onclick="answer()">=</span>
+            <span class="sign" onclick="pad('+')">+</span>
+        </div>
+    </div>
     <script type="text/javascript">
-    var ok = false;
-    var inpu = 0.0;
-    var a = 0;
-    var b = 0;
-    var c = 0;
-
-    function inNum(x) {
-        if (document.getElementById("result").innerHTML == "0.") {
-            inpu = x;
-        } else {
-            inpu = document.getElementById("result").innerHTML + x;
-        }
-
-        document.getElementById("result").innerHTML = inpu;
+    var x;
+    function pad(x) {
+        document.getElementById("result").innerHTML += x;
+    }
+    function answer() {
+         document.getElementById("result").innerHTML=eval(
+         document.getElementById("result").innerHTML);
     }
 
-
-    function addNum() {
-        a = parseInt(document.getElementById("result").innerHTML);
-        document.getElementById("result").innerHTML = a + "+";
-    }
-
-    function anser() {
-        var str = document.getElementById("result").innerHTML;
-        b = parseInt(document.getElementById("result").innerHTML);
-        document.getElementById("result").innerHTML = x;
-    }
-
-    function test(inx) {
-
-        if (inx == "+") {
-            var str = document.getElementById("result").innerHTML;
-            ok = true;
-            alert(ok);
-        }
-        // alert(typeof(in));
-    }
     </script>
 </body>
 
