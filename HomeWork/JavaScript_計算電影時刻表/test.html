@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>電影時刻表</title>
+</head>
+
+<body>
+    <label for="date">設定日期:</label>
+    <input type="date" id="txtDate"></input>
+    <button onclick="dateChk()">執行</button>
+    <p>電影查詢日期區間</p>
+    <p id="dateTime"></p>
+    <script type="text/javascript">
+    function dateChk() {
+        var userIn = new Date(document.getElementById('txtDate').value);
+        var txtdate = new Date();
+        var tisweek = new Date();
+        var nxtweek = new Date();
+        var myDay;
+
+        if (userIn.getDay() == 0) {
+            myDay = 7;
+        } else {
+            myDay = userIn.getDay();
+        }
+
+        if (myDay < 4) {
+            txtdate.setDate(tisweek.getDate()+tisweek.getDate()-userIn.getDate());
+        } else {
+            txtdate.setDate(nxtweek.getDate());
+        }
+        // if (temp.getDay() == 1) {
+        //     txtdate.setDate(temp.getDate() + 3);
+        // }
+        // if (temp.getDay() == 2) {
+        //     txtdate.setDate(temp.getDate() + 2);
+        // }
+        // if (temp.getDay() == 3) {
+        //     txtdate.setDate(temp.getDate() + 1);
+        // }
+
+        // if (temp.getDay() == 4) {
+        //     txtdate.setDate(temp.getDate() + 7);
+        // }
+
+        // if (temp.getDay() == 5) {
+        //     txtdate.setDate(temp.getDate() + 6);
+        // }
+        // if (temp.getDay() == 6) {
+        //     txtdate.setDate(temp.getDate() + 5);
+        // }
+        // if (temp.getDay() == 0) {
+        //     txtdate.setDate(temp.getDate() + 4);
+        // }
+
+        document.getElementById('dateTime').innerHTML = myDay;
+    }
+    </script>
+</body>
+
+</html>

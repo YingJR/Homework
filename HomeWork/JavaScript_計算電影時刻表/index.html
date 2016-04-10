@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Show Times</title>
+</head>
+
+<body>
+    <p id="pDate">這裡會顯示系統時間</p>
+    <select onchange="showDate()">
+        <option id="1">1</option>
+        <option id="2">2</option>
+        <option id="3">3</option>
+        <option id="4">4</option>
+    </select>
+    <br>
+    <button onclick="test()">Sunday</button>
+    <br>
+    <button onclick="test2()">Thursday</button>
+    <br>
+    <button onclick="checkDay()">Check</button>
+    <script type="text/javascript">
+    var tisWeekThu = new Date();
+    var nxtWeekThu = new Date();
+
+    function test() {
+        var tisWeekSun = new Date();
+        var nxtWeekSun = new Date();
+
+        tisWeekSun.setDate(tisWeekSun.getDate() + (7 - tisWeekSun.getDay()));
+        nxtWeekSun.setDate(tisWeekSun.getDate() + 7);
+        document.getElementById("pDate").innerHTML = tisWeekSun + "<br>" + nxtWeekSun;
+    }
+
+    function test2() {
+        tisWeekThu.setDate(tisWeekThu.getDate() + (4 - tisWeekThu.getDay()));
+        nxtWeekThu.setDate(tisWeekThu.getDate() + 7)
+        document.getElementById("pDate").innerHTML = tisWeekThu;
+    }
+
+    function checkDay() {
+    	
+    }
+
+
+    function showDate() {
+        document.getElementById("pDate").innerHTML = y;
+    }
+    </script>
+</body>
+
+</html>
