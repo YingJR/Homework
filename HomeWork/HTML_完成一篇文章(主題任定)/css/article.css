@@ -5,8 +5,6 @@ body {
 table {
     width: 1080px;
     margin: auto;
-    position: relative;
-    top: 50px;
     /*background-image: url(../img/29_bg.jpg);
     background-attachment: fixed;
     background-position: center;*/
@@ -31,16 +29,16 @@ header {
 nav {
     text-align: center;
     position: fixed;
-    top: 0px;
-    padding: 20px;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
     margin: auto;
     height: 30px;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
     font-family: DFKai-sb;
-    background-color: rgba(75, 75,75, 5);
-
+    background-color: #C1DCDC;
 }
 
 ol {
@@ -66,13 +64,13 @@ nav>a:link {
 
 nav>a:visited {
     font-weight: 100;
-    color: GoldenRod;
+    color: #D1C62D;
 }
 
 nav>a:hover {
     font-size: 25px;
     font-weight: bold;
-    color: #e6e600;
+    color: #FF9B00;
 }
 
 nav>a:active {
@@ -98,14 +96,10 @@ nav>a:active {
     padding-left: 260px;
 }
 
-img{
-        z-index: -1;
-}
-
-
 figcaption {
     color: #52527a;
     font-size: 25px;
     font-family: Microsoft JhengHei;
     text-align: center;
 }
+
