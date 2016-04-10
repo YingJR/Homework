@@ -14,9 +14,7 @@
     <script type="text/javascript">
     function dateChk() {
         var userIn = new Date(document.getElementById('txtDate').value);
-        var txtdate = new Date();
-        var tisweek = new Date();
-        var nxtweek = new Date();
+        var week = new Date(userIn);
         var myDay;
 
         if (userIn.getDay() == 0) {
@@ -26,35 +24,14 @@
         }
 
         if (myDay < 4) {
-            txtdate.setDate(tisweek.getDate()+tisweek.getDate()-userIn.getDate());
+            week.setDate(userIn.getDate()+(4-myDay));
         } else {
-            txtdate.setDate(nxtweek.getDate());
+            week.setDate(userIn.getDate()+(11-myDay));
         }
-        // if (temp.getDay() == 1) {
-        //     txtdate.setDate(temp.getDate() + 3);
-        // }
-        // if (temp.getDay() == 2) {
-        //     txtdate.setDate(temp.getDate() + 2);
-        // }
-        // if (temp.getDay() == 3) {
-        //     txtdate.setDate(temp.getDate() + 1);
-        // }
+        var movieTime=userIn+"===>"+week;
 
-        // if (temp.getDay() == 4) {
-        //     txtdate.setDate(temp.getDate() + 7);
-        // }
 
-        // if (temp.getDay() == 5) {
-        //     txtdate.setDate(temp.getDate() + 6);
-        // }
-        // if (temp.getDay() == 6) {
-        //     txtdate.setDate(temp.getDate() + 5);
-        // }
-        // if (temp.getDay() == 0) {
-        //     txtdate.setDate(temp.getDate() + 4);
-        // }
-
-        document.getElementById('dateTime').innerHTML = myDay;
+        document.getElementById('dateTime').innerHTML =  movieTime;
     }
     </script>
 </body>
